@@ -1,4 +1,4 @@
-# 🌍 Matching Game - Explore, Plan, and Connect 🌍
+# 🌍 Matching Game - Guess and Play 🌍
 
 ## Overview 🌟
 
