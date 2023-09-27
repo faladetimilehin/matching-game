@@ -1,14 +1,13 @@
 
 import './App.css'
-import Game from './components/Game'
+import Homepage from './Homepage'
 
 function App() {
 
 
   return (
     <>
-      <h1>Memory Game</h1>
-      <Game />
+      <Homepage />
     </>
   )
 }
