@@ -1,5 +1,5 @@
 import React from 'react';
-import imagePlaceholder from '/images/wow.jpg'
+import background from '/images/background.jpg'
 
 const Homepage = () => {
     return (
@@ -7,12 +7,10 @@ const Homepage = () => {
         <section className='home-wrapper'>
             <div className='home-caption'>
                 <h1>Matching Game</h1>
-                <div className='grey-box'></div>
+                <input type='text' />
                 <button>Start!</button>
             </div>
-                <img src={imagePlaceholder} alt='photo' className='homepage-img' />
-
-            
+            <img src={background} alt='photo' className='homepage-img' />
         </section>
        
     )
