@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import { useState } from "react";
 
-const Card = () => {
+export default function Card({ card }) {
   return (
-    <div>Card</div>
-  )
+    <div className="card">
+      <img src={card.img} alt={card.name} />
+    </div>
+  );
 }
-
-export default Card
