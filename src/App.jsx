@@ -8,7 +8,7 @@ function App() {
   const[flipped, setFlipped] = useState(false)
 
   const handleFlipped = () => {
-    setFlipped(true)
+    setFlipped(!flipped)
   }
 
   return (
