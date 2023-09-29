@@ -1,8 +1,7 @@
-
 import './App.css'
 import Homepage from './Homepage'
 import ImageGrid from './components/ImageGrid'
-import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
 
@@ -14,10 +13,9 @@ function App() {
       <ImageGrid />
       </section>}>
       </Route>
-      
       </Routes>
     </BrowserRouter>
   )
 }
 
-export default App
+export default App;
