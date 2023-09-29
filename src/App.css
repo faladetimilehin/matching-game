@@ -12,6 +12,10 @@
   height: 100vh;
 }
 
+h1 {
+  font-size: 36px;
+}
+
 .homepage-img {
   width: 50%;
   height: auto;
@@ -38,10 +42,46 @@ button {
   padding: 10px 25px;
 }
 
-input {
-  background-color: grey;
-  width: 150px;
-  height: 50px;
+h2 {
+  text-align: center;
+  margin: 0 100px;
+  color: green;
+  font-size: 28px;
+  font-style: italic;
+}
+
+/* RoundOne component styling */
+
+.round-one-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: blue;
+  text-decoration: none;
+}
+
+.round-one-heading {
+  font-size: 72px;
   color: #fff;
-  font-size: 20px;
+}
+
+/* imageGrid component styling */
+
+.image-grid-wrapper {
+  height: 40vh;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.imagegrid-component-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
 }
