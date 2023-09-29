@@ -1,47 +1,28 @@
-// import React from 'react'
-// import ImageCard from './ImageCard'
-// import images from './imagesData.json'
-
-// const ImageGrid = () => {
-//     return (
-//         <div className='image-grid-wrapper'>
-//         {images.map((image) => {
-//             return (
-//                 <div className='gallery-wrapper'><ImageCard key={image.id} {...image} />
-//                 </div>
-//             )
-//         })}
-//         </div>
-//     )
-// }
-
-// export default ImageGrid
-
 import React from 'react'
 import ImageCard from './ImageCard'
 
 const imagesData = [
     {
       "frontImageSrc": "/images/angry1.jpg",
-      "backContent": "ANGRY"
+      "backContent": ""
     },
     {
       "frontImageSrc": "/images/excited1.jpg",
-      "backContent": "EXCITED"
+      "backContent": ""
     },
     {
       "frontImageSrc": "/images/excited2.jpg",
-      "backContent": "EXCITED"
+      "backContent": ""
     },
     {
       "frontImageSrc": "/images/angry2.jpg",
-      "backContent": "ANGRY"
+      "backContent": ""
     }
   ]
 
-const ImageGrid = () => {
+const ImageGrid = ({flipped}) => {
     return (
-        <div className='gallery-wrapper'>
+        <div className={`gallery-wrapper ${flipped ? 'flipped' : ''}`}>
         {imagesData.map((image, index) =>  (
                <ImageCard key={index} frontImageSrc={image.frontImageSrc} backContent={image.backContent} />
             )
