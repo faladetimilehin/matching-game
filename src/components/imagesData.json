@@ -1,22 +1,18 @@
 [
     {
-      "id": 1,
-      "title": "angry1",
-      "src": "/images/angry1.jpg"
+      "frontImageSrc": "/images/angry1.jpg",
+      "backContent": "ANGRY"
     },
     {
-      "id": 3,
-      "title": "excited1",
-      "src": "/images/excited1.jpg"
+      "frontImageSrc": "/images/excited1.jpg",
+      "backContent": "EXCITED"
     },
     {
-      "id": 2,
-      "title": "angry2",
-      "src": "/images/angry2.jpg"
+      "frontImageSrc": "/images/angry2.jpg",
+      "backContent": "ANGRY"
     },
     {
-      "id": 4,
-      "title": "excited2",
-      "src": "/images/excited2.jpg"
+      "frontImageSrc": "/images/excited2.jpg",
+      "backContent": "EXCITED"
     }
   ]
