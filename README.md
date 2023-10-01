@@ -57,7 +57,7 @@ Experience the Matching Game functionality:
 
 ## Deployment 🚀
 
-- Access Matching Game here: [Travel Buddy 🌐](https://faladetimilehin.github.io/matching-game/)
+- Access Matching Game here: [Matching Game 🌐](https://faladetimilehin.github.io/matching-game/)
 - Dive into the codebase on GitHub: [GitHub Repository 💻](https://github.com/faladetimilehin/matching-game.git)
 
 ## Quality and Excellence 🌟

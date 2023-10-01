@@ -1,26 +1,19 @@
-import React, {useState} from 'react'
+import '../assets/styles/singleCard.css'
 
-const ImageCard = ({frontImageSrc, backContent}) => {
-const[isFlipped, setIsFlipped] = useState(false)
+export default function ImageCard({ card, handleChoice, flipped, disabled }) {
 
-const handleCardFlip = () => {
-  setIsFlipped(!isFlipped)
-}
+  const handleClick = () => {
+    if (!disabled) {
+      handleChoice(card)
+    }
+  }
 
   return (
-    <div className={`card ${isFlipped ? 'flipped': ''}`} onClick={handleCardFlip}>
-      <div className='card-back'>
-        {backContent}
-      </div>
-      <div className='card-front'>
-        <img 
-          src={frontImageSrc} 
-        alt='front-side'
-        style={{height: 150, width: 150, borderRadius: 6}}
-        />
+    <div className="card">
+      <div className={flipped ? 'flipped' : ''}>
+        <img className="front" src={card.src} alt="card front" />
+        <img className="back" src="/images/cover.jpg" onClick={handleClick} alt="cover" />
       </div>
     </div>
   )
 }
-
-export default ImageCard
