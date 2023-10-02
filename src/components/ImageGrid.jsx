@@ -15,6 +15,7 @@ function ImageGrid() {
   const [disabled, setDisabled] = useState(false)
   const correctMatchSoundRef = useRef(null);
   const incorrectMatchSoundRef = useRef(null);
+ 
 
 
   // shuffle cards for new game
@@ -48,6 +49,7 @@ function ImageGrid() {
         setCards(prevCards => {
           return prevCards.map(card => {
             if (card.src === choiceOne.src) {
+             
               return { ...card, matched: true }
             } else {
               return card
@@ -62,6 +64,7 @@ function ImageGrid() {
       }
 
     }
+
   }, [choiceOne, choiceTwo])
 
   console.log(cards)
@@ -75,6 +78,7 @@ function ImageGrid() {
     setChoiceTwo(null)
     setTurns(prevTurns => prevTurns + 1)
     setDisabled(false)
+   
   }
 
   useEffect(() => {
@@ -96,6 +100,7 @@ function ImageGrid() {
             handleChoice={handleChoice}
             flipped={card === choiceOne || card === choiceTwo || card.matched}
             disabled={disabled}
+           
           />
         ))}
       </div>

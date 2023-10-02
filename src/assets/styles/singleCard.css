@@ -9,7 +9,6 @@
   border-radius: 6px;
 }
 
-
 /* front of card the picture */
 .card .front {
   transform: rotateY(90deg);
@@ -31,4 +30,11 @@
 .flipped .back {
   transform: rotateY(90deg);
   transition-delay: 0s;
+}
+
+.reverse {
+  transform: scale(-1, 1);
+  margin-top: -30px;
+  color: black;
+  z-index: 100;
 }
