@@ -1,0 +1,38 @@
+[
+  {
+    "frontImageSrc": "/images/angry1.jpg",
+    "emotion": "ANGRY",
+    "backImageSrc": "Grey Image",
+    "value": "angry"
+  },
+  {
+    "frontImageSrc": "/images/angry1.jpg",
+    "emotion": "ANGRY",
+    "backImageSrc": "Grey Image",
+    "value": "angry"
+  },
+  {
+    "frontImageSrc": "/images/excited1.jpg",
+    "emotion": "EXCITED",
+    "backImageSrc": "Grey Image",
+    "value": "excited"
+  },
+  {
+    "frontImageSrc": "/images/excited1.jpg",
+    "emotion": "EXCITED",
+    "backImageSrc": "Grey Image",
+    "value": "excited"
+  },
+  {
+    "frontImageSrc": "/images/angry2.jpg",
+    "emotion": "ANGRY",
+    "backImageSrc": "Grey Image",
+    "value": "angry2"
+  },
+  {
+    "frontImageSrc": "/images/angry2.jpg",
+    "emotion": "ANGRY",
+    "backImageSrc": "Grey Image",
+    "value": "angry2"
+  }
+]

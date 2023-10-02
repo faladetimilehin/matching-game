@@ -14,11 +14,11 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path='/' exact element={<Homepage />}></Route>
-      <Route path='/image-grid' element={<section className='imagegrid-component-wrapper' onClick={handleFlipped}>
+      <Route path='/' exact element={<Homepage />}/>
+      <Route path='/image-grid/:level' element={<section className='imagegrid-component-wrapper' onClick={handleFlipped}>
       <ImageGrid flipped={flipped} />
-      </section>}>
-      </Route>
+      </section>} />
+     
       </Routes>
     </BrowserRouter>
   )

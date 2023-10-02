@@ -1,34 +1,42 @@
-import React from 'react'
-import ImageCard from './ImageCard'
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import ImageCard from "./ImageCard";
+import levelOne from "../assets/cardDecks/levelOne.json";
+import levelTwo from '../assets/cardDecks/levelTwo.json'
 
-const imagesData = [
-    {
-      "frontImageSrc": "/images/angry1.jpg",
-      "backContent": ""
-    },
-    {
-      "frontImageSrc": "/images/excited1.jpg",
-      "backContent": ""
-    },
-    {
-      "frontImageSrc": "/images/excited2.jpg",
-      "backContent": ""
-    },
-    {
-      "frontImageSrc": "/images/angry2.jpg",
-      "backContent": ""
+const ImageGrid = ({ flipped }) => {
+  const [imagesData, setImagesData] = useState([]);
+
+  const { level } = useParams();
+  console.log(level);
+  useEffect(() => {
+    function shuffleData() {
+      if (level === "levelOne") {
+// create logic to randomize the array
+
+        setImagesData(levelOne)
+      }
+      else if (level === "levelTwo") {
+
+
+        setImagesData(levelTwo)
+      }
     }
-  ]
 
-const ImageGrid = ({flipped}) => {
-    return (
-        <div className={`gallery-wrapper ${flipped ? 'flipped' : ''}`}>
-        {imagesData.map((image, index) =>  (
-               <ImageCard key={index} frontImageSrc={image.frontImageSrc} backContent={image.backContent} />
-            )
-        )}
-        </div>
-    )
-}
+    shuffleData();
+  }, []);
 
-export default ImageGrid
+  return (
+    <div className={`gallery-wrapper ${flipped ? "flipped" : ""}`}>
+      {imagesData.map((image, index) => (
+        <ImageCard
+          key={index}
+          frontImageSrc={image.frontImageSrc}
+          backContent={image.backContent}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default ImageGrid;

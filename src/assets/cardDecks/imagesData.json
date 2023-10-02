@@ -1,0 +1,28 @@
+[
+    {
+      "frontImageSrc": "/images/angry1.jpg",
+      "emotion": "ANGRY",
+      "backImageSrc": "Grey Image", 
+      "value": "angry1"
+
+    },
+    {
+      "frontImageSrc": "/images/angry1.jpg",
+      "emotion": "ANGRY",
+      "backImageSrc": "Grey Image", 
+      "value": "angry1"
+
+    },
+    {
+      "frontImageSrc": "/images/excited1.jpg",
+      "backContent": "EXCITED"
+    },
+    {
+      "frontImageSrc": "/images/angry2.jpg",
+      "emotion": "ANGRY"
+    },
+    {
+      "frontImageSrc": "/images/excited2.jpg",
+      "backContent": "EXCITED"
+    }
+  ]
