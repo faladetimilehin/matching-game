@@ -1,21 +1,27 @@
-import "./App.css";
-import Game from "./components/Game";
-import { useState } from "react";
-import Cards from "./components/Cards";
+import React, {useState} from 'react'
+import './App.css'
+import Homepage from './Homepage'
+import ImageGrid from './components/ImageGrid'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
-  //const [state, setState] = useState(0);
+  const[flipped, setFlipped] = useState(false)
+
+  const handleFlipped = () => {
+    setFlipped(!flipped)
+  }
+
   return (
-    <>
-      <h1>Memory Game</h1>
-      <Game />
-      <Homepage />
-      <div className="App">
-        <h1>FaceDuo</h1>
-        <Cards />
-      </div>
-    </>
-  );
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' exact element={<Homepage />}></Route>
+      <Route path='/image-grid' element={<section className='imagegrid-component-wrapper' onClick={handleFlipped}>
+      <ImageGrid flipped={flipped} />
+      </section>}>
+      </Route>
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App;
