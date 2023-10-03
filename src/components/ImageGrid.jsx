@@ -71,10 +71,6 @@ function ImageGrid() {
     return cards.every(card => card.matched)
   };
 
-  if (isGameOver()) {
-    correctMatchSoundRef.current.play()
-  }
-
   // reset choices & increase turn
   const resetTurn = () => {
     setChoiceOne(null)
