@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import '../assets/styles/imageGrid.css'
 
-
+import Confetti from 'react-confetti';
 import correctMatchSound from '../assets/mixkit-dumbbell-pins-at-the-gym-2102.wav'
 import incorrectMatchSound from '../assets/mixkit-negative-tone-interface-tap-2569.wav';
 import ImageCard from './ImageCard';
@@ -37,6 +37,8 @@ function ImageGrid() {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card)
   }
 
+ 
+
   // compare 2 selected cards
   useEffect(() => {
     if (choiceOne && choiceTwo) {
@@ -66,8 +68,12 @@ function ImageGrid() {
 
   console.log(cards)
   const isGameOver = () => {
-    return cards.every(card => card.matched);
+    return cards.every(card => card.matched)
   };
+
+  if (isGameOver()) {
+    correctMatchSoundRef.current.play()
+  }
 
   // reset choices & increase turn
   const resetTurn = () => {
@@ -86,6 +92,8 @@ function ImageGrid() {
     <div className="Grid">
       <h1>Xpert Match</h1>
       {isGameOver() && <p>Game Over! You've matched all the cards.</p>}
+      {isGameOver() && <Confetti />}
+      
       <button onClick={shuffleCards}>New Game</button>
 
       <div className="card-grid">
