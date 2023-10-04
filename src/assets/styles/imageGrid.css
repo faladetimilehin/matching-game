@@ -1,6 +1,31 @@
-.Grid {
+.grid {
   max-width: 860px;
   margin: 40px auto;
+}
+
+@media (min-width: 320px) {
+  .grid {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 425px) {
+  .grid {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 425px) {
+  .grid {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    max-width: 860px;
+    margin: 40px auto;
+  }
 }
 
 button {
@@ -24,4 +49,25 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px
+}
+
+@media (min-width: 320px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media (min-width: 425px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
 }
