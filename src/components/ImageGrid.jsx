@@ -85,7 +85,7 @@ function ImageGrid() {
 
 
   return (
-    <div className="Grid">
+    <div className="grid">
       <h1>Xpert Match</h1>
       {isGameOver() && <p>Game Over! You've matched all the cards.</p>}
       {isGameOver() && <Confetti />}
