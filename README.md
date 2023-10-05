@@ -28,10 +28,10 @@ Children who play this game are likely to have communication difficulties such a
 
 ## Demo 📸
 
-FaceDuo GIF:
+<img src="./public/images/FaceDuo GIF.gif" />
 
 ## Live App 🚀
 
-View the deployed site on Netlify here:
+View the deployed site on Netlify here: https://faceduo.netlify.app/
 
 © 2023 The Techxperts (Charlotte Brazier, Falade Timilehin, Hui Feng, Ade Olaoye, Djamel Guenifi). All rights reserved.
