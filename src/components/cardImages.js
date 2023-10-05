@@ -1,32 +1,32 @@
 export const cardImages = [
   {
-    "src": "/images/angry.jpg", 
+    src: "/images/angry.jpg",
     matched: false,
-    "emotion":"angry",
+    emotion: "angry",
   },
   {
-    "src": "/images/curious.jpg", 
+    src: "/images/curious.jpg",
     matched: false,
-    "emotion":"curious",
+    emotion: "curious",
   },
   {
-    "src": "/images/happy4.jpg",
-     matched: false,
-     "emotion":"happy",
+    src: "/images/happy4.jpg",
+    matched: false,
+    emotion: "happy",
   },
   {
-    "src": "/images/surprised.jpg", 
+    src: "/images/surprised.jpg",
     matched: false,
-    "emotion":"surprised",
+    emotion: "surprised",
   },
   {
-    "src": "/images/scared.jpg", 
+    src: "/images/furious.jpg",
     matched: false,
-    "emotion":"scared",
+    emotion: "furious",
   },
   {
-    "src": "/images/sad.jpg", 
+    src: "/images/sad.jpg",
     matched: false,
-    "emotion":"sad",
-  }
-]
+    emotion: "sad",
+  },
+];
