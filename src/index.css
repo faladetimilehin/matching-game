@@ -27,3 +27,9 @@ body {
   right: 0;
   z-index: 0;
 }
+
+.reverse {
+  font-size: 0.8em;
+  background-color: #f1c40f;
+  color: #2c3e50;
+}
