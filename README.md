@@ -1,28 +1,23 @@
-# 🌍 Matching Game - Guess and Play 🌍
+# 🌍 FaceDuo 🌍
 
 ## Overview 🌟
 
-This is a simple matching game where the objective is to match pairs of identical items or cards. Players are presented with a grid of facedown cards, and they must flip them over two at a time to find matching pairs. The game is won when all pairs have been successfully matched.
+FaceDuo is a fun and interactive facial expressions memory game aimed at children with autism, ADHD and communication difficulties. It is an effective tool for neurodiverse children to help them learn facial expressions and boost their memory whilst playing a card-based game.
+
+## How it Works 🌟
+
+- Players click or tap to turn over the cards, each of which bears a facial expression. Within the deck of cards, there are two matching cards bearing the same facial expression (e.g. 'sad', 'happy' or 'confused'.)
+- When the player matches two cards, the cards will stay on screen and display the text word for the emotion. A 'correct' noise will play.
+- If the two cards selected do not match, they will flip back over and an 'incorrect' noise will play.
+- Once all of the cards have been matched, confetti will appear on screen and the player will have the chance to play again.
 
 ## User Story ✨
 
-As an enthusiastic user, I want to be able to play a game by flipping cards
+Children who play this game are likely to have communication difficulties such as making friends or behaving appropriately during school lessons. They want to play a fun game that will keep them entertained. They are likely to be introduced to the game by their parents, who want to support their emotional and social development whilst keeping them safe.
 
-## Features and Acceptance Criteria
+## Additional Features
 
-- A grid of facedown cards.
-- Click or tap on cards to flip them over.
-- Timer to keep track of the player's time.
-- Score or move counter.
-- Win condition: All pairs successfully matched.
-- Restart button to start a new game.
-
-## How to Play
-
-1. Click or tap on any two cards to reveal what's underneath.
-2. If the cards match, they will stay face up. If not, they will flip back face down.
-3. Continue flipping cards and trying to match pairs.
-4. The game is won when all pairs are successfully matched.
+- A 'turns' counter so players can track how many turns it took them to match the cards.
 
 ## Technologies Used
 
@@ -31,43 +26,12 @@ As an enthusiastic user, I want to be able to play a game by flipping cards
 - JavaScript
 - React
 
-### 📜 Footer with Useful Links
-
-- Navigate through various sections of the app and find relevant information in the footer.
-
-## Instructions 📝
-
-Using Matching Game is a breeze:
-
-- A grid of facedown cards.
-- Click or tap on cards to flip them over.
-- Timer to keep track of the player's time.
-- Score or move counter.
-- Win condition: All pairs successfully matched.
-- Restart button to start a new game.
-
 ## Demo 📸
 
-Experience the Matching Game functionality:
-![Matching Game Demo](./src/assets/img/demo.gif)
+FaceDuo GIF:
 
-## Highlights and Advantages 🔥
+## Live App 🚀
 
-## Technical Insights 🛠️
+View the deployed site on Netlify here:
 
-## Deployment 🚀
-
-- Access Matching Game here: [Matching Game 🌐](https://faladetimilehin.github.io/matching-game/)
-- Dive into the codebase on GitHub: [GitHub Repository 💻](https://github.com/faladetimilehin/matching-game.git)
-
-## Quality and Excellence 🌟
-
-✨
-
-## Repository Standards 📚
-
-The GitHub repository sets a high standard for code organization, naming conventions, indentation, and version control. The README offers comprehensive project details, including a captivating demo, deployment links, and a GitHub repository link. 📝
-
-© 2023 [Falade Timilehin](https://github.com/faladetimilehin) All Rights Reserved.
-
-🌦️ Note: Feel free to customize and enhance this README based on your project's specific requirements and complexity. 📋
+© 2023 The Techxperts (Charlotte Brazier, Falade Timilehin, Hui Feng, Ade Olaoye, Djamel Guenifi). All rights reserved.
