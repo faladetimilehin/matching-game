@@ -3,10 +3,9 @@
 /* base styles */
 .home-wrapper {
   background-color: #f39c12;
-
 }
 
-.home-caption{
+.home-caption {
   z-index: 10;
 }
 
@@ -26,4 +25,10 @@ body {
   top: 0;
   right: 0;
   z-index: 0;
+}
+
+.reverse {
+  font-size: 0.8em;
+  background-color: #f1c40f;
+  color: #2c3e50;
 }
